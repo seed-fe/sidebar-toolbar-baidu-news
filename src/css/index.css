@@ -1,0 +1,242 @@
+@charset "UTF-8";
+body, ul, p, h1, h2, h3, h4, h5, h6, td, th, dl, dd, dt, input, ol, div {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-size: 12px;
+  font: 12px/1.5 "微软雅黑";
+  color: #333;
+  background-color: #fff;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  border-width: 0px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+em, i {
+  font-style: normal;
+}
+
+textarea {
+  resize: none;
+}
+
+input {
+  outline: none;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+.Container {
+  width: 1200px;
+  margin: 0px auto;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.OneTLeft {
+  float: left;
+}
+
+.OneTRight {
+  float: right;
+}
+
+/* 侧栏工具条 */
+.sidebar-list {
+  position: fixed;
+  width: 54px;
+  left: 50%;
+  margin-left: 608px;
+  bottom: 20px;
+}
+
+.sidebar-item {
+  position: relative;
+  background: url("../images/sidebar.png") no-repeat 0 0;
+  width: 46px;
+  height: 48px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.button-rotate {
+  overflow: hidden;
+  color: #fff;
+}
+
+.button-rotate a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #18448e;
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  line-height: 48px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  transform: rotate3d(0, 0, 1, 90deg);
+  transform-origin: -50% 50%;
+  transition: transform .3s ease-in;
+}
+
+.button-rotate:hover a {
+  transform: rotate3d(0, 0, 1, 0deg);
+}
+
+.qr-code {
+  background-position: 0 0;
+}
+
+.qr-code:hover .qr-code + .qrcode-con {
+  display: block;
+}
+
+.footprint {
+  background-position: 0 -48px;
+}
+
+.feedback {
+  background-position: 0 -96px;
+}
+
+.hotline {
+  background-position: 0 -144px;
+}
+
+.onlineService {
+  background-position: 0 -192px;
+}
+
+.helpCenter {
+  background-position: 0 -240px;
+}
+
+.goTop {
+  background-position: 0 -288px;
+}
+
+.goTop:hover {
+  background-position: 0 -336px;
+}
+
+a.double-line {
+  padding: 10px;
+  width: 26px;
+  height: 28px;
+  line-height: 14px;
+}
+
+.qrcode-con, .hotline-con, .online-con {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 54px;
+}
+
+.qrcode-con {
+  background: #e4e4e4;
+  width: 290px;
+  color: #333;
+}
+
+.qrcode-img {
+  margin: 12px;
+}
+
+.qrcode-textCon {
+  margin-right: 20px;
+}
+
+.qrcode-title {
+  margin-top: 20px;
+  margin-left: -12px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.qrcode-list {
+  list-style-type: disc;
+  margin-top: 16px;
+}
+
+.qrcode-item {
+  list-style-type: disc;
+}
+
+.hotline-con {
+  background: #18448e;
+  padding: 10px;
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.online-con {
+  background: #18448e;
+  padding: 10px;
+  width: 110px;
+  height: 48px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+
+.server {
+  display: block;
+  background: url(../images/sideIcon.png) no-repeat 2px -400px;
+  background-color: #fff;
+  border: 1px solid #666;
+  padding-left: 10px;
+  height: 24px;
+  line-height: 24px;
+  color: #333;
+}
+
+.extra-con {
+  position: relative;
+}
+
+.extra-con:hover .qrcode-con, .extra-con:hover .hotline-con, .extra-con:hover .online-con {
+  display: block;
+}
+
+/*# sourceMappingURL=index.css.map */
