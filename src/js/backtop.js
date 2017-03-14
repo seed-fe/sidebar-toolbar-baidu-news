@@ -15,6 +15,7 @@
             this.$el.on('click', $.proxy(this._go, this));
         }
         $(window).on('scroll', $.proxy(this._checkPosition, this));
+        this._checkPosition();
     }
     BackTop.DEFAULTS = {
         // 回到顶部的方式
